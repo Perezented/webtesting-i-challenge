@@ -17,3 +17,23 @@ it("Success on enhancing item", () => {
         })
     ).toEqual({ name: "strongerAxe", enhancement: 4, durability: 40 });
 });
+it("Fails on enhancing item enhancement:14", () => {
+    expect(true).toBe(true);
+    expect(
+        enhancer.fail({
+            name: "strongerAxe",
+            enhancement: 14,
+            durability: 40,
+        })
+    ).toEqual({ name: "strongerAxe", enhancement: 14, durability: 35 });
+});
+it("Fails on enhancing item enhancement:16", () => {
+    expect(true).toBe(true);
+    expect(
+        enhancer.fail({
+            name: "strongerAxe",
+            enhancement: 16,
+            durability: 40,
+        })
+    ).toEqual({ name: "strongerAxe", enhancement: 16, durability: 30 });
+});
