@@ -17,6 +17,7 @@ function repair(item) {
     console.log(item);
     return {
         ...item,
+        durability: 100,
     };
 }
 

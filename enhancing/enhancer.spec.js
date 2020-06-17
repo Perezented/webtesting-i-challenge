@@ -1,10 +1,9 @@
 const enhancer = require("./enhancer.js");
-const { describe } = require("yargs");
-const { italic } = require("chalk");
-const db = require("../data/connection.js");
+// const db = require("../data/connection");
 // test away!
-describe("repairs item", function () {
-    it("should repair an item to 100", function () {
-        expect(true).toBe(true);
-    });
+it("Repairs items", () => {
+    expect(true).toBe(true);
+    expect(
+        enhancer.repair({ name: "strongerAxe", enhancement: 3, durability: 40 })
+    ).toEqual({ name: "strongerAxe", enhancement: 3, durability: 100 });
 });
