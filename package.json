@@ -1,0 +1,29 @@
+{
+    "name": "webtesting-i-challenge",
+    "version": "1.0.0",
+    "description": "In this project, you will demonstrate proficiency by writing unit tests and production code to satisfy the _Minimum Viable Product_ described below.",
+    "main": "knexfile.js",
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "jest": "^26.0.1",
+        "knex": "^0.21.1",
+        "knex-cleaner": "^1.3.0",
+        "nodemon": "^2.0.4",
+        "sqlite3": "^4.2.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "jest --watchAll"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Perezented/webtesting-i-challenge.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Perezented/webtesting-i-challenge/issues"
+    },
+    "homepage": "https://github.com/Perezented/webtesting-i-challenge#readme"
+}
