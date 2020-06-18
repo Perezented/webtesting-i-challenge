@@ -7,11 +7,14 @@ module.exports = {
 
 function succeed(item) {
     console.log(item);
-
-    return {
-        ...item,
-        enhancement: item.enhancement + 1,
-    };
+    if (item.enhancement === 20) {
+        return { ...item, Godly: "Max level" };
+    } else {
+        return {
+            ...item,
+            enhancement: item.enhancement + 1,
+        };
+    }
 }
 
 function fail(item) {

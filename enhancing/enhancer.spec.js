@@ -17,6 +17,23 @@ it("Success on enhancing item", () => {
         })
     ).toEqual({ name: "strongerAxe", enhancement: 4, durability: 40 });
 });
+
+it("Success on enhancing item at enhancement=20", () => {
+    expect(true).toBe(true);
+    expect(
+        enhancer.succeed({
+            name: "SuperAxe",
+            enhancement: 20,
+            durability: 100,
+        })
+    ).toEqual({
+        Godly: "Max level",
+        durability: 100,
+        enhancement: 20,
+        name: "SuperAxe",
+    });
+});
+
 it("Fails on enhancing item enhancement:14", () => {
     expect(true).toBe(true);
     expect(
